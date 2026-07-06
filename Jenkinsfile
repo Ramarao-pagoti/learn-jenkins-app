@@ -1,5 +1,5 @@
 pipeline {
-    agent any {
+    agent any 
     stages {
         stage ('build') {
             agent {
@@ -17,7 +17,6 @@ pipeline {
                     npm run build
                     ls -la
                 '''
-                }
             }
         }
     }
