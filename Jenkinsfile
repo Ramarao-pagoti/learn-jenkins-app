@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     stages {
-        // this stage is to build
+        // this stage is for build
         /*
         stage ('build') {
             agent {
@@ -20,8 +20,8 @@ pipeline {
                     ls -la
                 '''
             }
-        */
         }
+        */
         stage ('test') {
             agent {
                 docker {
